@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.17" systemVersion="14E33b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.14"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="StackViewDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="8R9-kY-v37">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="489"/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lx0-gr-ZvA">
+                                <rect key="frame" x="0.0" y="490" width="600" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="6iW-GH-wKW"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Lx0-gr-ZvA" firstAttribute="top" secondItem="8R9-kY-v37" secondAttribute="bottom" constant="1" id="3HG-Ot-YLd"/>
+                            <constraint firstAttribute="trailing" secondItem="Lx0-gr-ZvA" secondAttribute="trailing" id="AtA-XQ-bFE"/>
+                            <constraint firstItem="Lx0-gr-ZvA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="JOg-pk-xGW"/>
+                            <constraint firstItem="8R9-kY-v37" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Q5G-o1-gW9"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Lx0-gr-ZvA" secondAttribute="bottom" id="ZPO-Fl-fSr"/>
+                            <constraint firstItem="8R9-kY-v37" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="iPY-dE-Llg"/>
+                            <constraint firstAttribute="trailing" secondItem="8R9-kY-v37" secondAttribute="trailing" id="riH-Z2-MkH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="horizontalStackView" destination="Lx0-gr-ZvA" id="lEa-kt-y0g"/>
+                        <outlet property="verticalStackView" destination="8R9-kY-v37" id="mfP-xm-YSa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="309" y="378"/>
+        </scene>
+    </scenes>
+</document>
